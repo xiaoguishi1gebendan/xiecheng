@@ -1,0 +1,98 @@
+body{
+    padding: 0;
+    margin: 0;
+    font: 14px/1.5 Tahoma;
+    height: 1000px;
+}
+a{
+    text-decoration: none;
+}
+.banner a img{
+    display: block;
+    width: 100%;
+    height: auto; /*图片会和父盒基线对其，中间会有空隙*/
+}
+.wrapper{
+    min-width: 320px; /*最小缩放的尺寸*/
+}
+.banner{
+    display: flex;
+}
+.banner a{
+    flex: 1;
+}
+.main{
+    padding: 5px;
+}
+.item{
+    display: flex;
+    height:90px;
+    border-radius: 8px;
+    margin-bottom:5px ;
+}
+.pub{
+    flex: 1;
+}
+.sub{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap; /*换行无效，能一行显示的就是一行显示*/
+}
+.nav a{
+    display:block;
+    width: 50%;
+    height: 50%;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    border-left: 1px solid white;
+    box-sizing: border-box; /*盒子大小是边框以内的大小*/
+}
+.sub a:nth-child(1),a:nth-child(2){
+    border-bottom: 1px solid white ;
+}
+
+
+.item:nth-child(1){
+    background-color:#ff697a;
+}
+.item:nth-child(2){
+    background-color: #3d98ff;
+}
+.item:nth-child(3){
+    background-color:  #44c522;
+}
+.item:nth-child(4){
+    background-color:#fc9720;
+}
+.item:nth-child(4) .pub a{
+    width: 100%;
+}
+.item:nth-child(4) .pub a:nth-child(1){
+    border-bottom: 1px solid white;
+}
+.extra{
+    display: flex;
+}
+.extra a{
+    flex: 1;
+}
+.extra img{
+    width: 100%;
+}
+footer nav{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+
+}
+footer a{
+    font-size: 14px;
+    flex: 1;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
